@@ -1,7 +1,7 @@
 const texts = [
     "I am a begginer developer.",
     "Python, Java, C++, JavaScript, HTML+CSS.",
-    "Working on Minecraft Plugins.",
+    "Currently making a game in Java!",
     "Visit my Github to follow my Work!"
 ];
 
