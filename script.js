@@ -1,7 +1,6 @@
 const texts = [
     "I am a begginer developer.",
     "Python, Java, C++, JavaScript, HTML+CSS.",
-    "Currently making a game in Java!",
     "Visit my Github to follow my Work!"
 ];
 
@@ -11,6 +10,16 @@ let currentText = '';
 let isDeleting = false;
 const speed = 35;
 const pause = 1500;
+
+function showIcons() {
+    const items = document.querySelectorAll(".langs >*");
+    items.forEach((el, i) => {
+        setTimeout(() => {
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+        }, i*350);
+    });
+}
 
 function type() {
     const typedEl = document.getElementById('typed');
@@ -41,4 +50,5 @@ function type() {
 
 document.addEventListener('DOMContentLoaded', () => {
     type();
+    showIcons();
 });
